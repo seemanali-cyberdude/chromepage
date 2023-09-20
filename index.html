@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chrome Home Page</title>
+</head>
+<body>
+    <div id="main">
+    <div class="header" >
+        <div class="button-container" id="button-container">
+        <button class="header-button-setting" value="black"></button>
+        <button class="header-button-setting" value="gray"></button>
+        <button class="header-button-setting" value="rgb(206, 41, 41)"></button>
+        <button class="header-button-setting" value="rgb(241, 88, 0)"></button>
+        </div>
+        <ion-icon name="settings-outline" id="setting" class="setting"></ion-icon>
+    </div>
+    </div>
+
+    <div class="main_container">
+        <ul>
+            <div class="outer"></div>
+            <div class="inner"></div>
+            <li style="--i:1;"> <a href="https://www.youtube.com"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li style="--i:2;"> <a href="https://www.github.com"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li style="--i:3;"> <a href="https://www.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li style="--i:4;"> <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li style="--i:5;"> <a href="https://www.linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+       
+        </ul>
+    </div>
+
+    <div class="search">
+        <form >
+            <div class="searchee">
+            <input type="text" placeholder="search across Google.."><button><ion-icon name="search-sharp"></ion-icon></button>
+        </div>
+        </form>
+    </div>
+
+    <div class="loveheading">
+        <h1 contenteditable="true" id="lovely">Coding is Love</h1>
+    </div>
+
+    <div class="time">
+     <h1><span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>  <span id="Timeinterval">PM</span></h1>
+    </div>
+
+    <div class="footermenu">
+        <span class="expand"><ion-icon name="ellipsis-vertical-outline" id="expand" ></ion-icon>
+            <div class="expanddiv">
+                <ul>
+                    <li><ion-icon name="list-outline"></ion-icon>TO DO List</li>
+                    <li id="about"><ion-icon name="person-circle-outline"></ion-icon>About</li>
+                </ul>
+            </div></span>
+    </div>
+
+    <div class="about" id="aboutcontiner">
+        <div class="imgcontainer">
+            <img src="/logo.jpg" alt="loading">
+        </div>
+        <div class="container">
+            <h1>Developed By Seeman</h1>
+            <p>Created Using HTML CSS and JAVA-SCRIPT to avoid the boring theme of the chrome startup</p>
+        </div>
+        <button id="aboutclose">Close</button>
+    </div>
+
+    <div class="quotes">
+        <h1 id="quote"></h1>
+        <p id="author"></p>
+    </div>
+
+    <div class="todolist">
+               <input type="text" placeholder="Add To Do Item Here..." id="input">
+               <button id = "addtask">Add</button>
+               <ul id="liscontainer">
+                <!-- <li>list</li>
+                <li>list</li>
+                <li>list4</li> -->
+               </ul>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
